@@ -14,7 +14,10 @@ public class HourlyEmployee implements Employee {
     private double hourlyRate;
     private double ttlHoursForYear;
     
-    
+    public HourlyEmployee(double hourlyRate, double ttlHoursForYear) {
+        setHourlyRate(hourlyRate);
+        setTtlHoursForYear(ttlHoursForYear);
+    }
     
     public double getAnnualWages() {
     return hourlyRate * ttlHoursForYear;
