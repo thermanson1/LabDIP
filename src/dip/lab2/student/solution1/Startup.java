@@ -26,7 +26,7 @@ public class Startup {
         System.out.println("Food Service Tip Amount: " + st.getTotalTip(tips[1]));
         
         for(int i=0; i < tips.length; i++) {
-            System.out.println("Tip Number " + (i+1) + " tip amount:" +
+            System.out.println(tips[i] + "Tip Number " + (i+1) + " tip amount:" +
             st.getTotalTip(tips[i]));
         }
     

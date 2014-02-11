@@ -11,6 +11,7 @@ package dip.lab2.student.solution1;
  * @author Teraesa
  */
 public class ServiceTipCalculator {
+    
     public double getTotalTip(TipCalculator t) {
         return t.getTip();
     }
