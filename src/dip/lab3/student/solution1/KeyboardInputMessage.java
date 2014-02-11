@@ -6,10 +6,27 @@
 
 package dip.lab3.student.solution1;
 
+import java.util.Scanner;
 /**
  *
  * @author Teraesa
  */
 public class KeyboardInputMessage {
+    private String message;
+    
+    Scanner keyboard = new Scanner(System.in);
+    
+    public KeyboardInputMessage(MessageService e){
+        
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+    
     
 }
