@@ -6,12 +6,16 @@
 
 package dip.lab2.student.solution1;
 
+
+
 /**
  *
  * @author Teraesa
  */
-public class ServiceTipCalculator {
-    public double getTotalTip(TipCalculator t) {
-        return t.getTip();
+public class Startup {
+    public static void main(String[]args){
+        
+        TipCalculator one = new BaggageServiceTipCalculator(FAIR, 4);
+        TipCalculator two = new FoodServiceTipCalculator(GOOD, 25.00);
     }
 }
