@@ -23,7 +23,7 @@ public class StartUp {
      
      for(int i=0; i < employees.length; i++) {
             System.out.println("Employee " + (i+1) + " compensation:" +
-            hr.getAnnualCompensationForEmployee(employees[i]));
+            hr.getAnnualCompensationforEmployee(employees[i]));
         }
      
      
