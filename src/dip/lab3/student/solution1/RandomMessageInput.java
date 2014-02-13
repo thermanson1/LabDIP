@@ -6,15 +6,16 @@
 
 package dip.lab3.student.solution1;
 
+import java.util.Random;
 /**
  *
  * @author Teraesa
  */
 public class RandomMessageInput implements MessageInput{
     private String[] messages = {
-        "Hello Programmers",
-        "What's going on?",
-        "Hope you pass!"
+        "I don't want to talk to you no more, you empty headed animal food trough wiper",
+        "I fart in your general direction.",
+        "Your mother was a hamster and your father smelt of elderberries."
     };
     
     @Override
