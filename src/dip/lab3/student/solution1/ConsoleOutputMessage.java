@@ -11,5 +11,7 @@ package dip.lab3.student.solution1;
  * @author Teraesa
  */
 public class ConsoleOutputMessage {
-    
+    public void outputMessage(MessageInput in){
+        System.out.println(in.getMessage());
+    }
 }

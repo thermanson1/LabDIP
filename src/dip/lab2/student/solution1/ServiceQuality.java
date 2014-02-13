@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package dip.lab3.student.solution1;
+package dip.lab2.student.solution1;
 
 /**
  *
  * @author Teraesa
  */
-public class FileInputMessage {
-    
+public enum ServiceQuality {
+    GOOD, FAIR, POOR
 }

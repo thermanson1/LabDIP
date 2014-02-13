@@ -13,10 +13,11 @@ package dip.lab2.student.solution1;
  * @author Teraesa
  */
 public class Startup {
+    
     public static void main(String[]args){
         
-        TipCalculator one = new BaggageServiceTipCalculator(BaggageServiceTipCalculator.ServiceQuality.FAIR, 4);
-        TipCalculator two = new FoodServiceTipCalculator(FoodServiceTipCalculator.ServiceQuality.GOOD, 25.00);
+        TipCalculator one = new BaggageServiceTipCalculator(ServiceQuality.FAIR, 4);
+        TipCalculator two = new FoodServiceTipCalculator(ServiceQuality.GOOD, 25.00);
     
         TipCalculator[] tips = {one, two};
         

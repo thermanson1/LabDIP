@@ -23,9 +23,7 @@ public class BaggageServiceTipCalculator implements TipCalculator {
     private static final double POOR_RATE = 0.10;
 
     
-    public enum ServiceQuality {
-        GOOD, FAIR, POOR
-    }
+   
     private ServiceQuality serviceQuality;
 
     public BaggageServiceTipCalculator(ServiceQuality q, int bags) {
