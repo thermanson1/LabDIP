@@ -12,15 +12,16 @@ import java.util.Random;
  * @author Teraesa
  */
 public class RandomMessageInput implements MessageInput{
-    private String[] messages = {
-        "I don't want to talk to you no more, you empty headed animal food trough wiper",
-        "I fart in your general direction.",
-        "Your mother was a hamster and your father smelt of elderberries."
+    private Message[] messages = {
+        new Message("I don't want to talk to you no more, you empty headed animal food trough wiper"),
+        new Message("I fart in your general direction."),
+        new Message("Your mother was a hamster and your father smelt of elderberries.")
     };
     
     @Override
-    public String getMessage(){
-        Random r = new Random(System.nanoTime());
-        return messages[r.nextInt(3)];
+    public Message getMessage(){
+        Random msg = new Random(System.nanoTime());
+        int index = msg.nextInt(messages.length);
+        return messages[index];
     }
 }

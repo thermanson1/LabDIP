@@ -12,17 +12,16 @@ import java.util.Scanner;
  * @author Teraesa
  */
 public class KeyboardInputMessage implements MessageInput {
-    private String message;
+    
 
-    public String getMessage() {
+    public Message getMessage() {
         Scanner keyboard = new Scanner(System.in);
-        message = keyboard.nextLine();
-        return message;
+        String message = keyboard.nextLine();
+        Message newMsg = new Message(message);
+        return newMsg;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+    
     
     
 }

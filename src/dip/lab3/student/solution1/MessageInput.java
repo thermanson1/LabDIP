@@ -11,5 +11,5 @@ package dip.lab3.student.solution1;
  * @author Teraesa
  */
 public interface MessageInput {
-    public abstract String getMessage();
+    public abstract Message getMessage();
 }
